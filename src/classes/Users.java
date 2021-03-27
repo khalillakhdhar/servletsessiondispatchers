@@ -13,7 +13,11 @@ public class Users {
 	public User exists(String usernom,String userprenom)
 	{
 		
-		
+		for(User u:mylist)
+		{
+			if((u.getNom().equals(usernom))&&(u.getPrenom().equals(userprenom)))
+				return u;
+		}
 		
 		
 		return null;
